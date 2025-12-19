@@ -1,0 +1,50 @@
+{
+    "name": "edi-prasetyo/error-log-capture",
+    "description": "Lightweight Laravel package to automatically capture exceptions and store error logs in database.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "error",
+        "exception",
+        "logging",
+        "bug",
+        "database"
+    ],
+    "authors": [
+        {
+            "name": "Edi Prasetyo",
+            "email": "ediprasetiyo2@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EdiPrasetyo\\ErrorLogCapture\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EdiPrasetyo\\ErrorLogCapture\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EdiPrasetyo\\ErrorLogCapture\\ErrorLogCaptureServiceProvider"
+            ],
+            "aliases": {
+                "ErrorLog": "EdiPrasetyo\\ErrorLogCapture\\Facades\\ErrorLog"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
