@@ -1,5 +1,9 @@
 # Error Log Capture
 
+[![Latest Version](https://img.shields.io/packagist/v/edi-prasetyo/error-log-capture)](https://packagist.org/packages/edi-prasetyo/error-log-capture)
+[![PHP Version](https://img.shields.io/badge/PHP-8.1%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
+[![Laravel](https://img.shields.io/badge/Laravel-10%2B-FF2D20?logo=laravel&logoColor=white)](https://laravel.com/)
+
 > Paket Laravel yang ringan untuk menangkap dan menyimpan log kesalahan di database secara otomatis.
 
 Package ini membantu developer **melihat error langsung dari database** tanpa harus membuka file log bawaan Laravel, dan ini sangat di perlukan saat aplikasi sudah di live production. Developer bisa membuat UI di dashboard untuk melihat Error Apa saja yang terjadi selama aplikasi sudah live dan bisa langsung eksekusi fixing problem tanpa harus mencari dimana letak errornya, karena package ini sudah menyimpan pesan error, lokasi file, akses url yang error dll. 
