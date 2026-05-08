@@ -6,18 +6,18 @@
 
 > Paket Laravel yang ringan untuk menangkap dan menyimpan log kesalahan di database secara otomatis.
 
-Package ini membantu developer **melihat error langsung dari database** tanpa harus membuka file log bawaan Laravel, dan ini sangat di perlukan saat aplikasi sudah di live production. Developer bisa membuat UI di dashboard untuk melihat Error Apa saja yang terjadi selama aplikasi sudah live dan bisa langsung eksekusi fixing problem tanpa harus mencari dimana letak errornya, karena package ini sudah menyimpan pesan error, lokasi file, akses url yang error dll. 
+Package ini membantu developer **melihat error langsung dari database** tanpa harus membuka file log bawaan Laravel, dan ini sangat di perlukan saat aplikasi sudah di live production. Developer bisa membuat UI di dashboard untuk melihat Error Apa saja yang terjadi selama aplikasi sudah live dan bisa langsung eksekusi fixing problem tanpa harus mencari dimana letak errornya, karena package ini sudah menyimpan pesan error, lokasi file, akses url yang error dll.
 
 ---
 
 ## Fitur Utama
 
-* ✅ Auto-capture exception (Laravel 10, 11, 12)
-* ✅ Menyimpan error ke database
-* ✅ Count Error jika terjadi pada Error yang Sama
-* ✅ Zero-config (langsung jalan setelah install)
-* ✅ Ringan & production-ready
-* ✅ Custom Error 500 dengan informasi id dan code
+- ✅ Auto-capture exception (Laravel 10, 11, 12, 13)
+- ✅ Menyimpan error ke database
+- ✅ Count Error jika terjadi pada Error yang Sama
+- ✅ Zero-config (langsung jalan setelah install)
+- ✅ Ringan & production-ready
+- ✅ Custom Error 500 dengan informasi id dan code
 
 ---
 
@@ -106,6 +106,7 @@ $errors = ErrorLogModel::all();
 return $errors
 
 ```
+
 ---
 
 ## Menampilkan Custom Informasi Error 500
